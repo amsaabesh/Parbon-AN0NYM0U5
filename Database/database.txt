@@ -1,0 +1,49 @@
+CREATE DATABASE Project_Parbon;
+DROP table IF EXISTS `User`;
+CREATE TABLE `User`(
+    `Password` VARCHAR(50) NOT NULL,
+    `Name` VARCHAR(50) NOT NULL,
+    `NIDnumber` BIGINT(20) NOT NULL,
+    `Email` VARCHAR(50) NOT NULL,
+    `MobileNumber` varchar(11) NOT NULL,
+    `DateofBirth` DATE NOT NULL,
+    PRIMARY KEY(`NIDnumber`)
+);
+DROP table IF EXISTS `Seller`;
+CREATE TABLE `Seller`(
+    `SellerID` BIGINT(15) NOT NULL AUTO_INCREMENT,
+    `Password`VARCHAR(50) NOT NULL,
+    `SellerName` VARCHAR(50) NOT NULL,
+    `NIDnumber`BIGINT(20) NOT NULL,
+    `MobileNumber`BIGINT(11) NOT NULL,
+    `CompanyName`VARCHAR(50) NOT NULL,
+    `OfficeAddress`VARCHAR(50) NOT NULL,
+    PRIMARY KEY(`SellerID`,`NIDnumber`)
+);
+DROP table IF EXISTS `Admin`;
+CREATE TABLE `Admin`(
+    `AdminID` BIGINT(15) NOT NULL,
+    `Password`VARCHAR(50) NOT NULL,
+    PRIMARY KEY(`AdminID`)
+);
+DROP table IF EXISTS `PackageDetails`;
+CREATE TABLE `PackageDetails`(
+    `BookingID` INt(10) NOT NULL AUTO_INCREMENT,
+    `Catering` VARCHAR(50) NOT NULL,
+    `Wedding_Stage` VARCHAR(50) NOT NULL,
+    `Community_Center` VARCHAR(50) NOT NULL,
+    `Holud_Stage` VARCHAR(50) NOT NULL,
+    `Food` VARCHAR(50) NOT NULL,
+     `Total` BIGINT(15) NOT NULL,
+    PRIMARY KEY(`BookingID`)
+);
+DROP table IF EXISTS `BookingDetails`;
+CREATE TABLE `BookingDetails`(
+     `BookingID` INt(10) NOT NULL,
+    `Name` VARCHAR(50) NOT NULL,
+    `MobileNumber` varchar(11) NOT NULL,
+    `Location` VARCHAR(50) NOT NULL,
+    `DateofBooking` DATE NOT NULL,
+    `Time` VARCHAR(10) NOT NULL,
+    PRIMARY KEY(`BookingID`)
+);
