@@ -74,5 +74,11 @@ namespace Parbon
             //MessageBox.Show(total.ToString());
             MessageBox.Show(string.Format("Total : {0}", total));
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+        }
     }
 }

@@ -22,5 +22,11 @@ namespace Parbon
             Console.WriteLine("Stage Price: 25000 TK\nGate Price: 15000 TK\nPhotoshot Stage: 10000 TK\nStage + Gate + Photoshot Stage=45000TK");
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+        }
     }
 }

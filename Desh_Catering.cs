@@ -46,5 +46,11 @@ namespace Parbon
                 Birthday b1 = new Birthday();
                 b1.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+        }
     }
 }

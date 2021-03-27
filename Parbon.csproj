@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Beddec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +163,6 @@
     <Compile Include="WS1.Designer.cs">
       <DependentUpon>WS1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Beddec.resx">
       <DependentUpon>Beddec.cs</DependentUpon>
     </EmbeddedResource>

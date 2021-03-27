@@ -158,7 +158,7 @@ namespace Parbon
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(178, 20);
             this.textBox8.TabIndex = 16;
-            this.textBox8.Text = "yyyy/mm/dd";
+            this.textBox8.Text = "yyyy-mm-dd";
             // 
             // groupBox2
             // 
@@ -190,6 +190,8 @@ namespace Parbon
             this.ClientSize = new System.Drawing.Size(295, 258);
             this.Controls.Add(this.groupBox2);
             this.Name = "LorS";
+            this.Opacity = 0.9D;
+            this.ShowInTaskbar = false;
             this.Text = "LorS";
             this.Load += new System.EventHandler(this.LorS_Load);
             this.groupBox2.ResumeLayout(false);

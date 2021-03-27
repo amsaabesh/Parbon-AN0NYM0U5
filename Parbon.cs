@@ -51,11 +51,6 @@ namespace Parbon
             D1.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            LorS ls = new LorS();
-            ls.ShowDialog();
-        }
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -63,16 +58,5 @@ namespace Parbon
             bp.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Admin add = new Admin();
-            add.ShowDialog();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            UserLogin us = new UserLogin();
-            us.ShowDialog();
-        }
     }
 }

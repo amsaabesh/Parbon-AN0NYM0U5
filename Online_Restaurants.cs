@@ -22,5 +22,11 @@ namespace Parbon
             OF_aabesh aab1 = new OF_aabesh();
             aab1.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+        }
     }
 }

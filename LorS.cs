@@ -53,6 +53,8 @@ namespace Parbon
             smtp.Credentials = nec;
             smtp.Send(mail);
             MessageBox.Show("Account created. A confirmation mail is send on your email.");
+            UserLogin u1 = new UserLogin();
+            u1.ShowDialog();
 
         }
     }

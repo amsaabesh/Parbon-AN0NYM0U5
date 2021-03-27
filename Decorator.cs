@@ -22,5 +22,11 @@ namespace Parbon
             Food f1 = new Food();
             f1.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+        }
     }
 }

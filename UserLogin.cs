@@ -35,6 +35,8 @@ namespace Parbon
             if (counter == 1)
             {
                 MessageBox.Show("Correct");
+                Form1 f1 = new Form1();
+                f1.ShowDialog();
             }
             else if (counter > 1)
             {
@@ -44,6 +46,40 @@ namespace Parbon
             {
                 MessageBox.Show("Incorrect");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MySqlConnection DBconnect = new MySqlConnection("datasource=localhost;port=3306;username=root;password=''");
+            MySqlCommand command = new MySqlCommand("select * from project_parbon.admin where AdminID='" + this.textBox9.Text + "' and Password= '" + this.textBox10.Text + "';", DBconnect);
+            MySqlDataReader myreader;
+            DBconnect.Open();
+            myreader = command.ExecuteReader();
+            int count = 0;
+            while (myreader.Read())
+            {
+                count = count + 1;
+            }
+            if (count == 1)
+            {
+                MessageBox.Show("Correct");
+                Form1 f1 = new Form1();
+                f1.ShowDialog();
+            }
+            else if (count > 1)
+            {
+                MessageBox.Show("Duplicate");
+            }
+            else
+            {
+                MessageBox.Show("Incorrect");
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LorS ls = new LorS();
+            ls.ShowDialog();
         }
     }
 }

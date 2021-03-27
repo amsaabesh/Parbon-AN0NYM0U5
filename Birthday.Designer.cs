@@ -33,13 +33,14 @@ namespace Parbon
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(418, 12);
+            this.button1.Location = new System.Drawing.Point(628, 258);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(219, 152);
             this.button1.TabIndex = 0;
@@ -48,7 +49,7 @@ namespace Parbon
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(561, 211);
+            this.button2.Location = new System.Drawing.Point(643, 141);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(204, 111);
             this.button2.TabIndex = 1;
@@ -57,11 +58,24 @@ namespace Parbon
             // button3
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(694, 21);
+            this.button3.Location = new System.Drawing.Point(694, 1);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 134);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(364, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(105, 67);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Birthday
             // 
@@ -69,6 +83,7 @@ namespace Parbon
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(859, 429);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -84,5 +99,6 @@ namespace Parbon
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

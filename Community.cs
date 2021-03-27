@@ -22,5 +22,11 @@ namespace Parbon
             CS1 cs1 = new CS1();
             cs1.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+        }
     }
 }
